@@ -41,7 +41,23 @@ To support advanced CI/CD functionality, multiple plugins and integrations were 
 - Nexus Artifact Uploader
 - Slack Notification Plugin
 
-## 4.🐳Docker CI/CD Pipeline
+## 4.💬Slack Notifications Integration
+
+Slack was connected to Jenkins to provide real-time build alerts, ensuring immediate visibility for every commit, build, or deployment event.
+
+### Steps Performed
+
+1. Created a Slack app and configured workspace permissions ⚙️
+2. Generated a Slack Bot/User token 
+3. Installed the **Slack Notification** plugin in Jenkins
+4. Added Slack workspace and channel details in Jenkins **Global Configuration** 
+5. Updated `Jenkinsfile` to send notifications for:
+   - Build start ▶️
+   - Build success ✅
+   - Build failure ❌
+
+
+## 5.🐳Docker CI/CD Pipeline
 
 The project included a container-based delivery workflow.
 
@@ -51,7 +67,7 @@ The project included a container-based delivery workflow.
 - Pushed images to Docker Hub or Amazon ECR
 - Added deployment steps to trigger AWS ECS updates
 
-## 5.☁️AWS ECS Deployment
+## 6.☁️AWS ECS Deployment
 
 A complete deployment workflow was implemented using AWS ECS.
 
