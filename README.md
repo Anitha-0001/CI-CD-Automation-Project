@@ -1,5 +1,9 @@
 # 🚀 CI/CD Automation Project
 
+This project demonstrates a full Continuous Integration and Continuous Delivery workflow built using industry-standard DevOps tools. The pipeline continuously fetches the application source code, builds it, performs static code analysis, manages artifacts through Nexus, builds Docker images, pushes them to a container registry, and deploys to AWS ECS.
+
+![alt text](<CI_CD through Jenkins.png>)
+
 ## 1.🔧Jenkins Setup and CI Foundation
 
 A complete Jenkins environment was prepared from scratch to automate the application build and delivery process.
